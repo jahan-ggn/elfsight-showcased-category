@@ -56,21 +56,23 @@ export default class ShowcasedTopicList extends Component {
   }
 
   <template>
-    <div class="header-wrapper" {{didInsert this.getTopics}}>
-      <h2>{{@title}}</h2>
-    </div>
-    <ConditionalLoadingSpinner @condition={{this.isLoading}}>
-      <TopicList
-        @topics={{this.topicList}}
-        @highlightLastVisited={{true}}
-        @showPosters={{true}}
-        @sortable={{@changeSort}}
-      />
-    </ConditionalLoadingSpinner>
-    <div class="center-wrapper">
-      <a href={{this.href}} class="btn btn-more">
-        {{i18n (themePrefix "see_all")}}
-      </a>
+    <div class="topic-list-wrapper">
+      <div class="header-wrapper" {{didInsert this.getTopics}}>
+        <h2>{{@title}}</h2>
+      </div>
+      <ConditionalLoadingSpinner @condition={{this.isLoading}}>
+        <TopicList
+          @topics={{this.topicList}}
+          @highlightLastVisited={{true}}
+          @showPosters={{true}}
+          @sortable={{@changeSort}}
+        />
+      </ConditionalLoadingSpinner>
+      <div class="center-wrapper">
+        <a href={{this.href}} class="btn btn-more">
+          {{i18n (themePrefix "see_all")}}
+        </a>
+      </div>
     </div>
   </template>
 }

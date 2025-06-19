@@ -1,3 +1,13 @@
+.vote-before-topic {
+  margin: 10px 10px 10px 0;
+  display: block;
+
+  .vote-count-wrapper {
+    height: 40px;
+    font-size: var(--font-up-2);
+  }
+}
+
 .center-wrapper {
   display: flex;
   justify-content: center;
@@ -18,4 +28,13 @@
 .discourse-tags a:last-of-type,
 .discourse-tags span:last-of-type {
   display: none;
+}
+
+.topic-list-wrapper .topic-list-data .topic-list-voting {
+  display: none !important;
+  margin-left: 0;
+
+  .link-bottom-line {
+    margin-left: 0;
+  }
 }
