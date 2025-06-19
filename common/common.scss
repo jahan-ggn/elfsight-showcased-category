@@ -4,6 +4,14 @@
   align-items: center;
   margin-top: 50px;
   margin-bottom: 50px;
+
+  a {
+    color: #ffffff;
+    background-color: #197bff;
+  }
+  a:visited {
+    color: #ffffff;
+  }
 }
 
 .discourse-tags a:last-of-type,
