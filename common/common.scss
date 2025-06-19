@@ -1,0 +1,20 @@
+.vote-before-topic {
+  margin: 10px 10px 10px 0px;
+  display: block;
+  .vote-count-wrapper {
+    height: 40px;
+    font-size: var(--font-up-2);
+  }
+}
+
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.discourse-tags a:last-of-type,
+.discourse-tags span:last-of-type {
+  display: none;
+}

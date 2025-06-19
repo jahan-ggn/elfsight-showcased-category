@@ -1,5 +1,8 @@
 en:
   theme_metadata:
-    description: ''
+    description: ""
     settings:
-      example_setting: A description of a setting.
+      select_category: "Select category to source topics from"
+      max_list_length: "Number of topics to show from the selected category"
+
+  see_all: "See All"

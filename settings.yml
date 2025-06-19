@@ -1,2 +1,9 @@
-example_setting:
-  default: true
+select_category:
+  type: list
+  list_type: category
+  default: ""
+max_list_length:
+  type: integer
+  default: 4
+  min: 1
+  max: 5

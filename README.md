@@ -1,4 +1,4 @@
-# elfsight-showcased-category
+# Elfsight Showcased Category
 
 **Theme Summary**
 
