@@ -32,9 +32,12 @@
 
 .topic-list-wrapper .topic-list-data .topic-list-voting {
   display: none !important;
-  margin-left: 0;
+
+  .link-top-line {
+    margin-left: 0 !important;
+  }
 
   .link-bottom-line {
-    margin-left: 0;
+    margin-left: 0 !important;
   }
 }
