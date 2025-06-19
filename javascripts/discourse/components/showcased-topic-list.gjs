@@ -19,7 +19,7 @@ export default class ShowcasedTopicList extends Component {
 
   get href() {
     if (this.category) {
-      return this.category.url + "/l/latest";
+      return this.category.url + "/l/latest?order=votes";
     } else {
       return "#";
     }

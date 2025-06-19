@@ -23,10 +23,14 @@
   a:visited {
     color: #fff;
   }
+
+  a:hover {
+    background-color: #197bff !important;
+  }
 }
 
-.discourse-tags a:last-of-type,
-.discourse-tags span:last-of-type {
+.topic-list-wrapper .discourse-tags a:last-of-type,
+.topic-list-wrapper .discourse-tags span:last-of-type {
   display: none;
 }
 
