@@ -36,8 +36,6 @@ export default class ShowcasedTopicList extends Component {
       filter: "votes",
       params: {
         category: this.category?.id,
-        order: this.order,
-        ascending: this.ascending,
       },
     };
 
