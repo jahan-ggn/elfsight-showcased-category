@@ -1,6 +1,6 @@
 en:
   theme_metadata:
-    description: ""
+    description: "A theme component to visually showcase selected categories on the landing page."
     settings:
       select_category: "Select category to source topics from"
       max_list_length: "Number of topics to show from the selected category"

@@ -2,4 +2,4 @@
 
 **Theme Summary**
 
-For more information, please see: **url to meta topic**
+A theme component to visually showcase selected categories on the landing page.
