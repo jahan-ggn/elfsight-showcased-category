@@ -1,50 +1,70 @@
-.vote-before-topic {
-  margin: 10px 10px 10px 0;
-  display: block;
-}
-
-.center-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
-
-  a {
-    color: #fff;
-    background-color: #197bff;
-  }
-
-  a:visited {
-    color: #fff;
-  }
-
-  a:hover {
-    background-color: #197bff !important;
-  }
-}
-
-.topic-list-wrapper .discourse-tags a:last-of-type,
-.topic-list-wrapper .discourse-tags span:last-of-type {
-  display: none;
-}
-
-.topic-list-wrapper .topic-list-data .topic-list-voting {
-  display: none !important;
-}
-
-.topic-list-wrapper .topic-list-data .link-top-line {
-  margin-left: 0 !important;
-}
-
-.topic-list-wrapper .topic-list-data .link-bottom-line {
-  margin-left: 0 !important;
-}
-
-.topic-list-wrapper {
-  box-shadow: 0 0 4px 0 rgb(0, 0, 0, 0.15) !important;
-  padding: 24px;
-}
-
 .custom-component-wrapper {
   margin-bottom: 3em;
+
+  .voting-wrapper {
+    position: relative;
+  }
+
+  .vote-options {
+    position: absolute;
+    top: 0;
+    left: 100%; /* Pushes it to the right of the vote button */
+    margin-left: 8px; /* Optional: Adds space between button and popup */
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    padding: 4px;
+  }
+
+  .vote .btn {
+    background: var(--header_primary-low-mid) !important;
+    cursor: default;
+  }
+
+  .center-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+    a {
+      color: #fff;
+      background-color: #197bff;
+    }
+
+    a:visited {
+      color: #fff;
+    }
+
+    a:hover {
+      background-color: #197bff !important;
+    }
+  }
+
+  .vote-before-topic {
+    margin: 10px 10px 10px 0;
+    display: block;
+  }
+
+  .topic-list-wrapper .discourse-tags a:last-of-type,
+  .topic-list-wrapper .discourse-tags span:last-of-type {
+    display: none;
+  }
+
+  .topic-list-wrapper .topic-list-data .topic-list-voting {
+    display: none !important;
+  }
+
+  .topic-list-wrapper .topic-list-data .link-top-line {
+    margin-left: 0 !important;
+  }
+
+  .topic-list-wrapper .topic-list-data .link-bottom-line {
+    margin-left: 0 !important;
+  }
+
+  .topic-list-wrapper {
+    box-shadow: 0 0 4px 0 rgb(0, 0, 0, 0.15) !important;
+    padding: 24px;
+  }
 }
