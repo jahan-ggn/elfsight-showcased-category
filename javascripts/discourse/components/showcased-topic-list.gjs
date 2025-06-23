@@ -64,7 +64,6 @@ export default class ShowcasedTopicList extends Component {
             @topics={{this.topicList}}
             @highlightLastVisited={{true}}
             @showPosters={{true}}
-            @sortable={{@changeSort}}
           />
         </ConditionalLoadingSpinner>
         <div class="center-wrapper">

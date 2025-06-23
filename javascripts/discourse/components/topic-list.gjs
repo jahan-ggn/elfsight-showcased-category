@@ -7,34 +7,30 @@ import ShowcasedTopicList from "../components/showcased-topic-list";
 export default class TopicList extends Component {
   @service router;
 
-  get category() {
-    return Category.findById(parseInt(settings.select_category, 10));
-  }
+  get categories() {
+    if (!settings.select_category) {
+      return [];
+    }
 
-  get categoryName() {
-    return this.category?.name;
-  }
-
-  get showTopicLists() {
-    return this.category;
+    return settings.select_category
+      .split("|")
+      .map((id) => parseInt(id, 10))
+      .map((id) => Category.findById(id))
+      .filter(Boolean);
   }
 
   get shouldShow() {
-    if (!this.showTopicLists) {
-      return false;
-    } else {
-      if (this.router.currentRouteName === `discovery.${defaultHomepage()}`) {
-        return true;
-      }
-    }
+    return (
+      this.categories.length > 0 &&
+      this.router.currentRouteName === `discovery.${defaultHomepage()}`
+    );
   }
 
   <template>
     {{#if this.shouldShow}}
-      <ShowcasedTopicList
-        @category={{this.category}}
-        @title={{this.categoryName}}
-      />
+      {{#each this.categories as |category|}}
+        <ShowcasedTopicList @category={{category}} @title={{category.name}} />
+      {{/each}}
     {{/if}}
   </template>
 }
