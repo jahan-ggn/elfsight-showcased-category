@@ -10,9 +10,9 @@ const VotesHeaderCell = <template>
 
 const VotesItemCell = <template>
   {{#if @topic.can_vote}}
-    <span class="vote-before-topic">
+    <td class="vote-before-topic">
       <VoteBox @topic={{@topic}} @showLogin={{routeAction "showLogin"}} />
-    </span>
+    </td>
   {{else}}
     <td> </td>
   {{/if}}

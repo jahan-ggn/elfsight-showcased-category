@@ -71,4 +71,8 @@
   tr:last-child {
     border-bottom: none !important;
   }
+
+  td {
+    color: var(--primary-medium);
+  }
 }
