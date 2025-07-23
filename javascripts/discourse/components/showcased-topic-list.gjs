@@ -57,7 +57,9 @@ export default class ShowcasedTopicList extends Component {
     <div class="custom-component-wrapper">
       <div class="topic-list-wrapper">
         <div class="header-wrapper" {{didInsert this.getTopics}}>
-          <h2>{{@title}}</h2>
+          <a href={{this.href}}>
+            <h2>{{@title}}</h2>
+          </a>
         </div>
         <ConditionalLoadingSpinner @condition={{this.isLoading}}>
           <TopicList
