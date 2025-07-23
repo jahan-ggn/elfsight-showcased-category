@@ -66,17 +66,7 @@
   .topic-list-wrapper {
     box-shadow: 0 0 4px 0 rgb(0, 0, 0, 0.15) !important;
     padding: 24px;
-  }
 
-  tr:last-child {
-    border-bottom: none !important;
-  }
-
-  td {
-    color: var(--primary-medium);
-  }
-
-  .topic-list-wrapper {
     .header-wrapper {
       a {
         h2 {
@@ -85,5 +75,13 @@
         }
       }
     }
+  }
+
+  tr:last-child {
+    border-bottom: none !important;
+  }
+
+  td {
+    color: var(--primary-medium);
   }
 }
