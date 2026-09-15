@@ -36,7 +36,7 @@ export default class ShowcasedTopicList extends Component {
       filter: "votes",
       params: {
         category: this.category?.id,
-        exclude_tag: "released",
+        exclude_tag: "Released",
       },
     };
 
